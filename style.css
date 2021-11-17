@@ -1,0 +1,39 @@
+/* body {
+  background-color: teal;
+} */
+#home {
+  height: 90vh;
+}
+.img-solo {
+  width: 80%;
+  border-radius: 25px;
+}
+
+.font-monsterrat {
+  font-family: "Montserrat", sans-serif;
+}
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+}
+#name {
+  font-weight: 600;
+  font-size: 3.8rem;
+}
+
+.section-heading {
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+.project-photo {
+  border-radius: 20px;
+}
+.project-section {
+  box-shadow: 5px 5px 20px #888;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.project-section:hover {
+  transform: translateY(-15px);
+  box-shadow: 5px 10px 30px #999;
+}
