@@ -142,11 +142,31 @@ body {
   color: #c2f8cb;
 }
 
-.btn-connect {
+.btn-connect:link,
+.btn-connect:visited {
   background-color: #5603ad;
+  border: 3px solid #5603ad;
   color: #c2f8cb;
   padding: 1rem 2rem;
   font-size: 1.3rem;
+  transition: all 0.2s;
+}
+
+.btn-connect:hover {
+  background-color: transparent;
+  border: 3px solid #c2f8cb;
+  color: #c2f8cb;
+  transform: translateY(-10px);
+}
+.btn-connect:active {
+  background-color: transparent;
+  border: 3px solid #c2f8cb;
+  color: #c2f8cb;
+  transform: translateY(0);
+}
+
+.btn-connect-space {
+  width: 100%;
 }
 /* FOOTER */
 #footer {
