@@ -22,33 +22,33 @@
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:ital,wght@0,600;1,200;1,600&display=swap" rel="stylesheet">
 
     <!-- external css -->
     <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
     <!-- *** NAV BAR *** -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light py-3 nav-bg">
+      <a class="navbar-brand font-fredoka ml-md-4 " href="#home" id="nav-logo"><i class="far fa-smile-beam"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        <ul class="navbar-nav ml-auto font-monsterrat">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#project">Projects</a>
+            <a class="nav-link text-white" href="#project">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tools">Tools</a>
+            <a class="nav-link text-white" href="#tools">Tools</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link text-white" href="#contact">Contact</a>
           </li>
          
       </div>
@@ -57,59 +57,134 @@
 
 <!-- MAIN CONTENT -->
 
-    <div class="container">
+    <div class="container-fluid">
 <!-- HOME SECTION -->
-      <div class="row my-5 align-items-center font-monsterrat" id="home">
-        <div class="col-md-7 order-2 order-md-1">
-          <h1 class="text-center my-4" id="name">
+      <div class="row align-items-center font-monsterrat p-5 background-linear" id="home">
+        <div class="col-md-7 order-2 order-md-1 home-name py-5" id="home-text">
+          <h1 class="text-center text-md-left mt-4 font-fredoka " id="name">
            Veronica V. Valdez
           </h1>
-          <h2 class="my-2 text-md-right text-center" id="title">&lt; Fullstack Web Developer / &gt;</h2>
-          <p class="text-md-right text-justify my-4" id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsam voluptate reprehenderit, illo consequuntur maiores laboriosam, facilis doloremque, ea eveniet modi assumenda dolore ut dicta ab neque magnam sequi. Iure.</p>
-          <a href="#contact" class="btn btn-connect">Let's Connect</a>
+          <h2 class="text-center text-md-left" id="title">Fullstack Web Developer</h2>
+          <p class="text-justify my-4 mx-auto mx-md-1 text-white" id="description">Hi! I'm a fullstack developer based in Manila, Philippines. I am passionate about creating easily accessible sites for people of all backgrounds. This is my website, where I like to show projects that I've been working on. Feel free to say hi! </p>
+          <a href="#contact" class="btn btn-connect mt-5 mx-auto text-md-left ">Let's connect</a>
         </div>
-        <div class="col-md-5 order-1 order-md-2 text-center">
+        <div class="col-md-5 order-1 order-md-2 text-center ">
           <img src="./images/IMG_2987.jpg" alt="Photo of Veronica Valdez" class="img-solo img-fluid">
         </div>
       </div>
 <!-- PROJECTS FOLDER -->
-      <div class="font-monsterrat" id="project">
-        <h2 class="text-center my-5 p-3 section-heading">Projects</h2>
-        <div class="row my-5 p-5 project-section">
-          <div class="col-md-6 order-1">
-            <img src="./images/project1.jpeg" class="img-fluid project-photo">
+      <div class="font-monsterrat mx-md-3" id="project">
+        <h2 class="text-center my-5 p-3 section-heading font-fredoka">Projects</h2>
+        <div class="row my-5 p-3 p-md-5 project-section mx-3 align-items-center">
+          <div class="col-md-6 order-1 ">
+            <img src="./images/project1.jpeg" class="img-fluid project-photo mb-4">
           </div>
-          <div class="col-md-6 order-2">
-            <h3 class="text-center my-3">Cryptocurrency Mining</h3>
-            <p class="text-justify px-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel excepturi quia nam reprehenderit facilis. Ipsum aliquam quam ut officia eius?</p>
-          </div>
-        </div>
-        <div class="row my-5 p-5 project-section">
-          <div class="col-md-6 order-1">
-            <img src="./images/project2.jpeg" class="img-fluid project-photo">
-          </div>
-          <div class="col-md-6 order-2">
-            <h3 class="text-center my-3">Project Fitness</h3>
-            <p class="text-justify px-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel excepturi quia nam reprehenderit facilis. Ipsum aliquam quam ut officia eius?</p>
+          <div class="col-md-6 order-2 project-text mx-auto">
+            <h3 class="text-center my-3 project-title">Crypto Mining</h3>
+            <p class="text-justify text-white">Cryptocurrency web platform for mining and trading of various cryptocurrencies. Some of the features include a profitability calculator, latest news section, and an online forum section. </p>
           </div>
         </div>
-        <div class="row my-5 p-5 project-section">
-          <div class="col-md-6 order-1">
-            <img src="./images/project3.jpeg" class="img-fluid project-photo">
+        <div class="row my-5 p-3 p-md-5 project-section mx-3 align-items-center">
+          <div class="col-md-6 order-1 order-md-2">
+            <img src="./images/project2.jpeg" class="img-fluid project-photo mb-4">
           </div>
-          <div class="col-md-6 order-2">
-            <h3 class="text-center my-3">Startup</h3>
-            <p class="text-justify px-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel excepturi quia nam reprehenderit facilis. Ipsum aliquam quam ut officia eius?</p>
+          <div class="col-md-6 order-2 order-md-1 project-text mx-auto">
+            <h3 class="text-center my-3 project-title">Project Fitness</h3>
+            <p class="text-justify text-white ">Mobile fitness tracker application that records food intake and calculates calorie consumption. Some of the added features include meal plans according to your needs, regularly updated workout routines.</p>
+          </div>
+        </div>
+        <div class="row my-5 p-3 p-md-5 project-section mx-3 align-items-center">
+          <div class="col-md-6 order-1">
+            <img src="./images/project3.jpeg" class="img-fluid project-photo mb-4">
+          </div>
+          <div class="col-md-6 order-2 project-text mx-auto">
+            <h3 class="text-center my-3 project-title">Startup</h3>
+            <p class="text-justify text-white">Web application that provides aid to individuals looking to create startup businesses. Some of the added features include resources page, job portal, and an online forum section.</p>
           </div>
         </div>
       </div>
       <!-- END OF PROJECTS -->
       <!-- TOOLS -->
-      <div class="font-monsterrat" id="tools">
-        <h2 class="text-center my-5 p-3 section-heading">Tools</h2>
-        
+      <div class="font-monsterrat mx-auto my-5 py-5" id="tools">
+        <h2 class="text-center p-5 section-heading font-fredoka">Tools</h2>
+        <div class="row">
+          <img src="./images/s10-images/logo-html5.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-css3.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-javascript.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-git.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-expressjs.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-mongodb.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+        </div>
+        <div class="row">
+          <img src="./images/s10-images/logo-react.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-postman.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-heroku.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-rest.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-sublime-text-3.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+          <img src="./images/s10-images/logo-bootstrap.png" alt="Photo of tool logo" class="img-fluid tools-photo col-6 col-md-2">
+        </div>
+      </div>
+      <!-- END OF TOOLS -->
+
+    </div>
+    <!-- CONTACT -->
+    <div class="contact-container py-4">
+      <div class="font-monsterrat px-3 py-5 mx-auto" id="contact">
+        <h2 class="text-center my-5 section-heading font-fredoka">Let's Connect!</h2>
+        <div class="d-flex flex-column">
+
+            <h3 class="text-center text-white">Send a message:</h3>
+            <form action="#">
+              <div class="form-group mb-5">
+                <label for="contact-name" class="contact-label">Name:</label>
+                <input type="text" class="form-control text-input" id="contact-name" name="name" placeholder="Enter your name">
+              </div>
+              
+              
+              <div class="form-grou mb-5">
+                <label for="email" class="contact-label">Email:</label>
+                <input type="email" class="form-control text-input" id="email" name="email" placeholder="Enter your email address">
+              </div>
+              
+              
+              <label for="text-textarea" class="contact-label">Message:</label>
+              <textarea
+              name="textarea"
+              id="text-textarea"
+              cols="30"
+              rows="5"
+              class="form-control mb-5"
+              placeholder="Leave your message here"></textarea>
+            
+            <button class="btn btn-block btn-submit mx-auto my-3" type="submit">
+              Submit
+            </button>
+            </form>
+    
+      
+          <h3 class="text-center my-5 text-white">Socials:</h3>
+          <div class="d-flex flex-row justify-content-center">
+            <a href="#" class="social mx-3" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social mx-3" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social mx-3" target="_blank">
+              <i class="fab fa-gitlab"></i>
+            </a>
+          </div>
+      
+        </div>
       </div>
     </div>
+    <!-- END OF MAIN CONTENT -->
+    <footer id="footer">
+<div class="p-5 font-fredoka footer-text">
+  <h3 class="text-center">&copy; Veronica V. Valdez 2021</h3>
+  
+</div>
+    </footer>
     <!-- *** JS DEPENDENCIES *** -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
